@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     OpenSCAD
 " Maintainer:   Sirtaj Singh Kang <sirtaj-vim@sirtaj.net>
-" Last Changed: 2011 April 19
+" Last Changed: 2013 March 05
 
 if version < 600
     syntax clear
