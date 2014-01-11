@@ -23,9 +23,10 @@ syn keyword openscadConditional if else
 syn keyword openscadRepeat for intersection_for
 syn keyword openscadInclude include use
 syn keyword openscadCsgKeyword union difference intersection render intersection_for
-syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski 
+syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull linear_extrude rotate_extrude
 syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface
 syn keyword openscadPrimitive2D square circle polygon import_dxf
+syn keyword openscadPrimitiveImport import
 
 syn match openscadSpecialVariable "\$[a-zA-Z]\+\>" display
 syn match openscadModifier "^\s*[\*\!\#\%]" display
@@ -66,6 +67,7 @@ hi def link openscadNumbers			    Number
 hi def link openscadNumber			    Number
 hi def link openscadPrimitiveSolid		Keyword
 hi def link openscadPrimitive2D 		Keyword
+hi def link openscadPrimitiveImport 	Keyword
 hi def link openscadRepeat			    Repeat
 hi def link openscadSpecialVariable		Special
 hi def link openscadString			    String
