@@ -76,3 +76,10 @@ hi def link openscadTransform			Statement
 hi def link openscadCommentTodo			Todo
 
 let b:current_syntax = "openscad"
+
+" Contributed by dmeehl @ http://sproutform.com/physibles/12
+" - Inputting opening paren also inserts closing paren
+inoremap ( ()<Esc>i
+" - Inputting opening curly bracket also inputs closing curly bracket
+"   on the next line.
+inoremap { {<CR>}<Esc>kA
