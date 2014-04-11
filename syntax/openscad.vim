@@ -83,3 +83,14 @@ inoremap ( ()<Esc>i
 " - Inputting opening curly bracket also inputs closing curly bracket
 "   on the next line.
 inoremap { {<CR>}<Esc>kA
+
+" Blatantly stolen from vim74\syntax\c.vim
+"when wanted, highlight trailing white space
+if exists("openscad_space_errors")
+  if !exists("openscad_no_trail_space_error")
+    syn match	openscadSpaceError	display excludenl "\s\+$"
+  endif
+  if !exists("openscad_no_tab_space_error")
+    syn match	openscadSpaceError	display " \+\t"me=e-1
+  endif
+endif
