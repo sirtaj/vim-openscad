@@ -75,8 +75,6 @@ hi def link openscadString			    String
 hi def link openscadTransform			Statement
 hi def link openscadCommentTodo			Todo
 
-let b:current_syntax = "openscad"
-
 " Blatantly stolen from vim74\syntax\c.vim
 "when wanted, highlight trailing white space
 if exists("openscad_space_errors")
@@ -87,3 +85,5 @@ if exists("openscad_space_errors")
     syn match	openscadSpaceError	display " \+\t"me=e-1
   endif
 endif
+
+let b:current_syntax = "openscad"
