@@ -18,14 +18,14 @@ syn match openscadFunction /\<\h\w*\>/ contained display
 syn keyword openscadModuleDef module nextgroup=openscadModule skipwhite skipempty
 syn match openscadModule /\<\h\w*\>/ contained display
 
-syn keyword openscadStatement echo assign
+syn keyword openscadStatement echo assign let
 syn keyword openscadConditional if else
 syn keyword openscadRepeat for intersection_for
 syn keyword openscadInclude include use
 syn keyword openscadCsgKeyword union difference intersection render intersection_for
-syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull projection linear_extrude rotate_extrude
+syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull projection linear_extrude rotate_extrude offset
 syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface
-syn keyword openscadPrimitive2D square circle polygon import_dxf
+syn keyword openscadPrimitive2D square circle polygon import_dxf text
 syn keyword openscadPrimitiveImport import child children
 
 syn match openscadSpecialVariable "\$[a-zA-Z]\+\>" display
@@ -48,7 +48,7 @@ syn region openscadVector start="\[" end="\]" transparent fold
 
 syn keyword openscadBuiltin abs acos asin atan atan2 ceil cos exp floor ln log
 syn keyword openscadBuiltin lookup max min pow rands round sign sin sqrt tan
-syn keyword openscadBuiltin str len search version version_num
+syn keyword openscadBuiltin str len search version version_num concat chr
 syn keyword openscadBuiltin dxf_cross dxf_dim
 
 hi def link openscadFunctionDef			Structure
