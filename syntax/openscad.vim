@@ -18,7 +18,7 @@ syn match openscadFunction /\<\h\w*\>/ contained display
 syn keyword openscadModuleDef module nextgroup=openscadModule skipwhite skipempty
 syn match openscadModule /\<\h\w*\>/ contained display
 
-syn keyword openscadStatement echo assign let
+syn keyword openscadStatement echo assign let assert
 syn keyword openscadConditional if else
 syn keyword openscadRepeat for intersection_for
 syn keyword openscadInclude include use
